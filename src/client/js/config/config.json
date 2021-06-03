@@ -1,0 +1,20 @@
+{
+  "domain": null,
+  "port": null,
+  "baseUrl": "/",
+  "isSSL": false,
+  "siteName": "Sample Site",
+  "media": {
+    "url": "https://example.com",
+    "upload": {
+      "image": {
+        "countMax": 10,
+        "sizeMax": 8388608,
+        "acceptTypes": ["jpeg", "png", "gif"]
+      }
+    }
+  },
+  "firebase": {
+    "isEnabled": true
+  }
+}

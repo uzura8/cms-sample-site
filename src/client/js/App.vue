@@ -9,6 +9,7 @@
         <router-view></router-view>
       </main>
       <div class="column is-3-desktop is-2-widescreen">
+        <eb-side-nav-menu></eb-side-nav-menu>
       </div>
     </div>
   </div>
@@ -18,6 +19,7 @@
 <script>
 import EbNavbar from '@/components/organisms/EbNavbar'
 import EbAdminNavbar from '@/components/organisms/EbAdminNavbar'
+import EbSideNavMenu from '@/components/organisms/EbSideNavMenu'
 
 export default {
   name: 'App',
@@ -25,6 +27,7 @@ export default {
   components: {
     EbNavbar,
     EbAdminNavbar,
+    EbSideNavMenu,
   },
 
   computed: {

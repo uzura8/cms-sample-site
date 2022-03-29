@@ -16,7 +16,7 @@ import AdminTop from '@/templates/AdminTop'
 //import UserEdit from '@/templates/UserEdit'
 import AdminSignIn from '@/templates/AdminSignIn'
 import Pages from '@/templates/Pages'
-//import Information from '@/templates/Information'
+import Information from '@/templates/Information'
 import Informations from '@/templates/Informations'
 
 export default [
@@ -35,11 +35,11 @@ export default [
     name: 'SignIn',
     component: SignIn
   },
-  //{
-  //  path: '/informations/:slug',
-  //  name: 'Information',
-  //  component: Information
-  //},
+  {
+    path: '/informations/:slug',
+    name: 'Information',
+    component: Information
+  },
   {
     path: '/informations',
     name: 'Informations',

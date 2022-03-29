@@ -16,6 +16,8 @@ nbproject/
 /node_modules/*
 package-lock.json
 
+/src/client/js/config/config.json*
+
 /public/assets/js/*
 /public/assets/css/*
 /public/.htaccess

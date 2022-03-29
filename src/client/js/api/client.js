@@ -4,10 +4,9 @@ import site from '@/util/site'
 export default axios.create({
   baseURL: site.uri('api/'),
   headers: {
-    'ContentType': 'application/json',
-    'X-Requested-With': 'XMLHttpRequest',
+    'Accept': 'application/json',
+    'Content-Type': 'application/json'
   },
-  withCredentials: true,
+  //withCredentials: true,
   responseType: 'json',
 })
-

@@ -15,12 +15,11 @@ import AdminTop from '@/templates/AdminTop'
 //import UserCreate from '@/templates/UserCreate'
 //import UserEdit from '@/templates/UserEdit'
 import AdminSignIn from '@/templates/AdminSignIn'
+import Pages from '@/templates/Pages'
+//import Information from '@/templates/Information'
+import Informations from '@/templates/Informations'
 
 export default [
-  {
-    path: '/',
-    component: Top,
-  },
   {
     path: '/signup',
     name: 'SignUp',
@@ -35,6 +34,16 @@ export default [
     path: '/signin',
     name: 'SignIn',
     component: SignIn
+  },
+  //{
+  //  path: '/informations/:slug',
+  //  name: 'Information',
+  //  component: Information
+  //},
+  {
+    path: '/informations',
+    name: 'Informations',
+    component: Informations
   },
   {
     path: '/errors/required-email-verification',
@@ -88,9 +97,21 @@ export default [
     component: AdminTop,
     meta: { requiresAuth: true }
   },
-  { path: '/about', component: About },
+  //{ path: '/about', component: About },
   { path: '/error/forbidden', component: Forbidden, name: 'Forbidden' },
   { path: '/error/unauthorized', component: Unauthorized },
   { path: '/error/notfound', component: NotFound },
+  {
+    path: '/pages/:slug',
+    component: Pages,
+  },
+  {
+    path: '/',
+    component: Pages,
+  },
+  {
+    path: '/:slug',
+    component: Pages,
+  },
   { path: '*', redirect: '/error/notfound' }
 ]
